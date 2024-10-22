@@ -1,0 +1,9 @@
+services:
+  post-mock-api:
+    build: .
+    ports:
+      - "5002:5002"
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    command: npm start
